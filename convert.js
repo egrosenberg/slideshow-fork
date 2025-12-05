@@ -75,6 +75,12 @@ function formatSpan(span) {
     if (parseInt(formatting.getAttribute("i"))) addTag("i");
     if (formatting.getAttribute("u") && formatting.getAttribute("u") !== "none")
       addTag("u");
+    if (
+      formatting.getAttribute("strike") &&
+      formatting.getAttribute("strike") !== "noStrike"
+    ) {
+      addTag("s");
+    }
   }
 
   const textContent = span.getElementsByTagName("a:t")[0]?.textContent;
