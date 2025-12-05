@@ -1,0 +1,19 @@
+{
+  "name": "slideshow",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server -p 8081 --cors",
+    "convert": "node convert.js test.pptx ./public"
+  },
+  "dependencies": {
+    "@xmldom/xmldom": "^0.8.11",
+    "http-server": "^14.1.1",
+    "jszip": "^3.10.1"
+  }
+}
